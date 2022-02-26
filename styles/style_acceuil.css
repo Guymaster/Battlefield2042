@@ -1,0 +1,115 @@
+#laListe {
+    display: flex;
+    font-size: 20px;
+}
+
+#laListe>div {
+    width: 800px;
+    margin: 30px;
+}
+
+#texte {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+#vid {
+    width: 100%;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.boutonBox {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#audessus {
+    transition: 0.4s;
+    font-family: 'Ubuntu', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #A9C2D9;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 38vw;
+    opacity: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#audessus:hover {
+    transition: 0.4s;
+    opacity: 1;
+}
+
+#vivez {
+    width: 500px;
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+#precomBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+#precom {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: large;
+    border: none;
+    border-radius: 40px;
+    background-color: #0C1726;
+    color: #A9C2D9;
+    margin-right: 70px;
+}
+
+#precom:hover {
+    cursor: pointer;
+}
+
+#laListe li {
+    margin-bottom: 20px;
+}
+
+#listeDiv {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#vid2 {
+    display: block;
+    width: 700px;
+    margin: auto;
+}
+
+#listeTitre {
+    width: 300px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border-bottom: solid 3px;
+    padding-bottom: 5px;
+}
