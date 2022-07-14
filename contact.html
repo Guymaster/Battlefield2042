@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Précommander - BF42</title>
 
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="styles/style_repetitif.css">
-    <link rel="stylesheet" href="styles/style_contact.css">
-    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style_repetitif.css">
+    <link rel="stylesheet" href="style_contact.css">
+    <link rel="icon" href="logo.png">
 
 </head>
 
 <body>
-    <header>
+    <header id="header" class="">
         <div id="logoBox">
-            <img src="images/logo.png" alt="" id="logo">
+            <img src="logo.png" alt="" id="logo">
 
         </div>
         <div id="rechBox">
@@ -31,6 +31,17 @@
             <li><a href="galerie.html" class="onglet">Galerie</a></li>
             <li><a href="contact.html" class="onglet selection">Précommander</a></li>
         </ul>
+        <div id="menu">
+            <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35"><defs><style>.cls-1{fill:none;stroke:#A9C2D9;stroke-miterlimit:10;stroke-width:5px;}</style></defs><title>menu</title><line class="cls-1" y1="17.5" x2="40" y2="17.5"/><line class="cls-1" y1="2.5" x2="40" y2="2.5"/><line class="cls-1" y1="32.5" x2="40" y2="32.5"/></svg>
+        </div>
+
+        <div id="expandedMenu">
+            <ul>
+                <li><a href="index.html" class="onglet">Acceuil</a></li>
+                <li><a href="galerie.html" class="onglet">Galerie</a></li>
+                <li><a href="contact.html" class="onglet selection">Précommander</a></li>
+            </ul>
+        </div>
     </header>
 
     <div id="contenu">
@@ -90,6 +101,7 @@
             </li>
         </ul>
     </footer>
+    <script src="carousel.js"></script>
 </body>
 
 </html>

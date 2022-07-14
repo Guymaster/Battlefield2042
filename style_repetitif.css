@@ -1,0 +1,232 @@
+header {
+    background-color: #0C1726;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+#logo {
+    height: 60px;
+    margin: 15px;
+}
+
+.onglet {
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+    font-weight: bolder;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #61788C;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+}
+
+#ongletsBox {
+    margin-right: 90px;
+    display: flex;
+    list-style: none;
+}
+
+.onglet:hover {
+    border-bottom: solid 1px;
+}
+
+.selection {
+    border: none;
+    color: rgba(0, 0, 0, 1);
+    color: #A9C2D9;
+    border-bottom: solid 3px;
+}
+
+.selection:hover {
+    border-bottom: solid 3px;
+}
+
+body {
+    margin: 0px;
+    background-color: #02020A;
+    font-family: 'Oswald, sans-serif';
+}
+
+.lienLogo {
+    width: 40px;
+}
+
+#footerListe {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: #0C1726;
+    margin: 0px;
+    padding: 30px;
+    font-family: 'Ubuntu', cursive;
+    color: white;
+}
+
+footer svg {
+    top: 12px;
+    position: relative;
+}
+
+#contenu {
+    color: #A9C2D9;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#rechBox {
+    padding-top: 30px;
+}
+
+#rechZone {
+    outline: none;
+    padding: 7px;
+    font-size: large;
+    border-radius: 10px;
+    border: solid 1px #61788C;
+    color: #61788C;
+    background-color: #0C1726;
+}
+
+#rechZone:focus {
+    border-color: #A9C2D9;
+    color: #A9C2D9;
+}
+
+.lienFooter {
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    padding-top: 20px;
+    transition: 0.3s;
+    color: #61788C;
+    fill: #61788C;
+}
+
+.lienFooter:hover {
+    background-color: #A9C2D9;
+    fill: #02020A;
+    color: #02020A;
+    transition: 0.3s;
+}
+
+#footerHeader {
+    text-align: center;
+    color: #61788C;
+    font-weight: bolder;
+}
+
+.boutonBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bouton {
+    border: solid 1px;
+    text-decoration: none;
+    color: #61788C;
+    font-weight: bolder;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    margin: 60px;
+    font-family: 'Oswald, sans-serif'
+}
+
+.bouton:hover {
+    color: #A9C2D9;
+}
+
+#menu{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 14px;
+    position: relative;
+    top: 14px;
+    display: none;
+}
+
+#header[class="expand"] #menu{
+    border: solid 1px #A9C2D9;
+}
+
+#menu svg{
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 680px) {
+    #footerListe{
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+    }
+
+    #footerListe li{
+        display: flex;
+        justify-content: center;
+    }
+
+    #footerListe li a{
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    #ongletsBox{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+}
+
+
+#expandedMenu{
+    position: absolute;
+    z-index: 20;
+    background-color: #0C1726;
+    top: 80px;
+    right: 0px;
+    height: 160px;
+    display: none;
+}
+#expandedMenu ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    height: 120px;
+    width: 160px;
+    margin: 0px;
+}
+
+#expandedMenu .onglet{
+    font-size: 17px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#header[class="expand"] #expandedMenu{
+    display: block;
+}

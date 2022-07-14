@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil - BF42</title>
 
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="styles/style_repetitif.css">
-    <link rel="stylesheet" href="styles/style_acceuil.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
-    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style_repetitif.css">
+    <link rel="stylesheet" href="style_acceuil.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="logo.png">
 
 </head>
 
 <body>
-    <header>
+    <header id="header" class="">
         <div id="logoBox">
-            <img src="images/logo.png" alt="" id="logo">
+            <img src="logo.png" alt="" id="logo">
 
         </div>
         <div id="rechBox">
@@ -28,10 +28,21 @@
             </form>
         </div>
         <ul id="ongletsBox">
-            <li><a href="acceuil.html" class="onglet selection">Acceuil</a></li>
+            <li><a href="index.html" class="onglet selection">Acceuil</a></li>
             <li><a href="galerie.html" class="onglet">Galerie</a></li>
             <li><a href="contact.html" class="onglet">Précommander</a></li>
         </ul>
+        <div id="menu">
+            <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 35"><defs><style>.cls-1{fill:none;stroke:#A9C2D9;stroke-miterlimit:10;stroke-width:5px;}</style></defs><title>menu</title><line class="cls-1" y1="17.5" x2="40" y2="17.5"/><line class="cls-1" y1="2.5" x2="40" y2="2.5"/><line class="cls-1" y1="32.5" x2="40" y2="32.5"/></svg>
+        </div>
+
+        <div id="expandedMenu">
+            <ul>
+                <li><a href="index.html" class="onglet selection">Acceuil</a></li>
+                <li><a href="galerie.html" class="onglet">Galerie</a></li>
+                <li><a href="contact.html" class="onglet">Précommander</a></li>
+            </ul>
+        </div>
     </header>
     <div id="audessus">
         <div id="vivez">
@@ -43,12 +54,13 @@
             </a>
         </div>
     </div>
-    <video src="https://cdn-125.anonfiles.com/b8l7w6Kbx2/78736040-1645879693/vlc-record-2022-02-26-11h29m51s-bf4.mp4-.mp4-h264_720p.mp4" muted autoplay loop id="vid"></video>
+    <img id="vid" src="c1.png">
     <div id="contenu">
         <h1>BATTLEFIELD 2042</h1>
         <p id="texte">
-            Rejoignez le combat sur Orbital avec une sélection variée de Spécialistes, d'armes de pointe et de véhicules à votre disposition. La bêta ouverte sera disponible entre le 6 et le 9 octobre 2021. L'accès anticipé est disponible les 6 et 7 octobre 2021
-            pour tous les joueurs ayant précommandé le jeu ou étant membres EA Play. <br> Ci-dessous, vous pourrez trouver la configuration recommandée pour participer à la beta.
+            Rejoignez le combat sur Orbital avec une sélection variée de Spécialistes, d'armes de pointe et de véhicules à votre disposition. La bêta ouverte s'est déroulée entre le 6 et le 9 octobre 2021 et a été un succès. L'accès anticipé au jeu est disponible pour tous les joueurs ayant précommandé le jeu ou étant membres EA Play. <br> Ci-dessous, vous pourrez trouver la configuration recommandée pour jouer au jeu.
+            <br>
+            Ne vous faites pas avoir en achetant ou en téléchargeant des fausses copies du jeu sur des plateformes douteuses.
         </p>
         <div id="listeDiv">
             <div>
@@ -71,9 +83,6 @@
             </ul>
         </div>
 
-        <div>
-            <video src="https://cdn-133.anonfiles.com/R6o8wdK9x2/3f825685-1645879732/vlc-record-2022-02-26-11h38m34s-Battlefield%202042%20Official%20Reveal%20Trailer%20(ft.%202WEI)-.mp4" id="vid2" controls poster="images/imgVid.png"></video>
-        </div>
 
 
         <div class="boutonBox">
@@ -100,6 +109,7 @@
             </li>
         </ul>
     </footer>
+    <script src="carousel.js"></script>
 </body>
 
 </html>

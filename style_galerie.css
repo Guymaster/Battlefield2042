@@ -1,0 +1,39 @@
+.ligneGal {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#contenu {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Oswald, sans-serif'
+}
+
+.imgGal {
+    transition: 0.5s;
+    height: 200px;
+    border-radius: 20px;
+    border: solid 1px #61788C;
+}
+
+.imgGal:hover {
+    transition: 0.5s;
+    border: solid 1px #A9C2D9;
+    border-radius: 5px;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 860px){
+    .ligneGal {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .imgGal{
+        height: auto;
+        width: 50%;
+        margin: 20px auto;
+    }
+}
